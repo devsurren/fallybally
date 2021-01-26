@@ -6,7 +6,7 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Test();
+        Testing();
     }
 
     // Update is called once per frame
@@ -15,7 +15,7 @@ public class Test : MonoBehaviour
         
     }
 
-    void Test(){
-        print("Just Use This Script File for Your Testing")
+    void Testing(){
+        print("Just Use This Script File for Your Testing");
     }
 }
