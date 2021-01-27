@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerControll : MonoBehaviour
 {
-   // [SerializeField]
-   public float tapForce;
+    [SerializeField]
+    float tapForce;
     Rigidbody rb;
-
    void Awake(){
        rb=GetComponent<Rigidbody>();
    }
