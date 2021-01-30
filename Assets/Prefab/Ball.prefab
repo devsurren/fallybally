@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 9002610508218063863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4cd9c37de5afeac40af7c38d615078cb, type: 2}
+  - {fileID: 2100000, guid: b248470cf7aa61d4b958adbbd91cee80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,7 +109,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &9002610508218063857
 MonoBehaviour:
@@ -123,4 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49df668a0f239e4fba2069f4db07cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tapForce: 12.5
+  tapForce: 8.5
+  colors:
+  - {r: 0, g: 0.9058824, b: 0.9450981, a: 0}
+  - {r: 0.93725497, g: 1, b: 0, a: 0}
+  - {r: 0.9921569, g: 0.043137256, b: 0.9333334, a: 0}
+  - {r: 0.87843144, g: 0.10980393, b: 0.10980393, a: 0}
+  blows: {fileID: 3833462879905473608, guid: 15ad1545fc4451040b4e30520d7ebd5b, type: 3}

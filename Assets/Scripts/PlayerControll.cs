@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControll : MonoBehaviour
 {
@@ -8,11 +7,19 @@ public class PlayerControll : MonoBehaviour
     float tapForce;
     public Color[] colors;
     private string currentColor;
+    private int colornumber;
     Rigidbody rb;
-    Renderer render;
+   MeshRenderer render;
+
+    public GameObject blows;
+    public Text scorePanel;
+    private int tempScore;
    void Awake(){
        rb=GetComponent<Rigidbody>();
-       render=GetComponent<Renderer>();
+       render=GetComponent<MeshRenderer>();
+   }
+   void Start(){
+       randomizePlayerColor();
    }
 
     void Update()
@@ -23,7 +30,7 @@ public class PlayerControll : MonoBehaviour
     }
     void randomizePlayerColor(){
         //B;L;P;R
-        int colornumber = Random.Range(0,colors.Length);
+          colornumber = Random.Range(0,colors.Length);
         switch(colornumber){
             case 0:
                 render.material.color=colors[0];
@@ -43,10 +50,27 @@ public class PlayerControll : MonoBehaviour
                 break;
             default:
                 render.material.color=colors[0];
-                currentColor="Blue";
+                currentColor="Purple";
                 break;
 
         }
 
     }
+
+   void OnCollisionEnter(Collision other){
+       if(other.gameObject.tag==currentColor){
+           ScoreManager.instance.score+=5;
+          GameObject blast= Instantiate(blows,transform.position,Quaternion.identity)as GameObject;
+        // ParticleSystem.MainModule setUp = blast.GetComponent<ParticleSystem>().main;
+        // setUp.startColor= new ParticleSystem.MinMaxGradient(render.material.color);
+        blast.GetComponent<ParticleSystem>().startColor=render.material.color;
+           randomizePlayerColor();
+            Destroy(other.gameObject);
+          
+       } else if(other.gameObject.tag!="Pole"&&other.gameObject.tag!=currentColor){
+           print("GameOver");
+       }
+   }
+        
+    
 }
