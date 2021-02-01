@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,10 +8,22 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     float levelDown;
     public GameObject pole;
-    // Start is called before the first frame update
+    public GameObject mainMenuPanel;
+
+    private GameObject instanceofMainMenuPanel;
+    public bool isGameStarted;
+
+    public static GameManager instance {get;set;}
+   void Awake(){ instance=this;  }
     void Start()
     {
         initialPoles();
+        instanceofMainMenuPanel=mainMenuPanel;
+        isGameStarted=false;
+    }
+
+    void Update(){
+        if(isGameStarted){ startGame();}
     }
 
     void initialPoles(){
@@ -21,5 +32,10 @@ public class GameManager : MonoBehaviour
             Instantiate(pole,onTarget,Quaternion.identity);
             pos-=levelDown;
         }
+    }
+
+    public void startGame(){
+       // SceneManager.LoadScene("Game");
+        instanceofMainMenuPanel.SetActive(false);
     }
 }

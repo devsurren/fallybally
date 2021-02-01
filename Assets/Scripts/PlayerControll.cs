@@ -20,11 +20,14 @@ public class PlayerControll : MonoBehaviour
    }
    void Start(){
        randomizePlayerColor();
+       rb.useGravity=false;
    }
 
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
+            GameManager.instance.isGameStarted=true;
+            rb.useGravity=true;
             rb.AddForce(Vector3.up * tapForce,ForceMode.Impulse);
         }
     }

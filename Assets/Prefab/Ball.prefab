@@ -130,3 +130,4 @@ MonoBehaviour:
   - {r: 0.9921569, g: 0.043137256, b: 0.9333334, a: 0}
   - {r: 0.87843144, g: 0.10980393, b: 0.10980393, a: 0}
   blows: {fileID: 3833462879905473608, guid: 15ad1545fc4451040b4e30520d7ebd5b, type: 3}
+  scorePanel: {fileID: 0}

@@ -5,15 +5,12 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform player;
-
-    
-    
-
-    // Update is called once per frame
-    void Update()
+    public Vector3 deltaDistance;
+    void LateUpdate()
     {
         if(player){
-           
+           Vector3 targetLoaction = player.position+deltaDistance;
+           transform.position=targetLoaction;
         }
     }
 }
