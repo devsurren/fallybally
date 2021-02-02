@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControll : MonoBehaviour
 {
@@ -73,6 +74,11 @@ public class PlayerControll : MonoBehaviour
        } else if(other.gameObject.tag!="Pole"&&other.gameObject.tag!=currentColor){
            print("GameOver");
        }
+
+       if(other.gameObject.tag=="Finish"){ 
+           SceneManager.LoadScene("Game");
+           PlayerPrefs.SetInt("currentlevel",PlayerPrefs.GetInt("currentlevel")+1);
+         }
    }
         
     

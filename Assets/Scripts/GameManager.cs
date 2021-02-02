@@ -1,4 +1,5 @@
 ﻿using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     float levelDown;
     public GameObject pole;
     public GameObject mainMenuPanel;
+    public Text currentLevel;
+    public Text nextLevel;
 
     private GameObject instanceofMainMenuPanel;
     public bool isGameStarted;
@@ -19,6 +22,8 @@ public class GameManager : MonoBehaviour
     {
         initialPoles();
         instanceofMainMenuPanel=mainMenuPanel;
+        currentLevel.text=(PlayerPrefs.GetInt("currentlevel")+1).ToString();
+        nextLevel.text=(PlayerPrefs.GetInt("currentlevel")+2).ToString();
         isGameStarted=false;
     }
 
@@ -35,7 +40,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void startGame(){
-       // SceneManager.LoadScene("Game");
         instanceofMainMenuPanel.SetActive(false);
     }
 }
