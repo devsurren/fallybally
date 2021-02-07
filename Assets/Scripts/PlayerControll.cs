@@ -72,11 +72,14 @@ public class PlayerControll : MonoBehaviour
             Destroy(other.gameObject);
           
        } else if(other.gameObject.tag!="Pole"&&other.gameObject.tag!=currentColor){
+           GameManager.instance.isGameOver=true;
+           rb.isKinematic=true;
            print("GameOver");
        }
 
        if(other.gameObject.tag=="Finish"){ 
-           SceneManager.LoadScene("Game");
+           GameManager.instance.isLevelUp=true;
+           rb.isKinematic=true;
            PlayerPrefs.SetInt("currentlevel",PlayerPrefs.GetInt("currentlevel")+1);
          }
    }
