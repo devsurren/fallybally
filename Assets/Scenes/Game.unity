@@ -206,30 +206,111 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_MinVertexDistance
+      value: 4.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b248470cf7aa61d4b958adbbd91cee80, type: 2}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 0.21943215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].time
+      value: 0.37140334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[3].time
+      value: 0.60555923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.5496967
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].value
+      value: 0.1393986
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].inSlope
+      value: -2.675677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].inSlope
+      value: -1.5615592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].outSlope
+      value: -2.675677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].outSlope
+      value: -1.5615592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480469817217122597, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002610508218063857, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: textUp
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9002610508218063857, guid: 487363b22c231fb4ea72a9d453c4822b,
         type: 3}
       propertyPath: scorePanel
       value: 
       objectReference: {fileID: 1324803780}
+    - target: {fileID: 9002610508218063857, guid: 487363b22c231fb4ea72a9d453c4822b,
+        type: 3}
+      propertyPath: textMeshpro
+      value: 
+      objectReference: {fileID: 5753852493388189021, guid: ef81adcc5d104f0428ee91cfa8026c0c,
+        type: 3}
     - target: {fileID: 9002610508218063859, guid: 487363b22c231fb4ea72a9d453c4822b,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9002610508218063859, guid: 487363b22c231fb4ea72a9d453c4822b,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9002610508218063859, guid: 487363b22c231fb4ea72a9d453c4822b,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9002610508218063859, guid: 487363b22c231fb4ea72a9d453c4822b,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9002610508218063859, guid: 487363b22c231fb4ea72a9d453c4822b,
         type: 3}
@@ -445,7 +526,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 157733757}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2053813259}
+        m_MethodName: levelupGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &157733757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,7 +1250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783471574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.78, y: -34.89, z: 2.5}
+  m_LocalPosition: {x: 0.29, y: -34.89, z: 2.5}
   m_LocalScale: {x: 5, y: 0.5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1698,7 +1790,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10000
+  m_Text: 0
 --- !u!222 &1324803781
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2364,7 +2456,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1895575197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2053813259}
+        m_MethodName: restartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1895575197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2444,6 +2547,7 @@ MonoBehaviour:
   nextLevel: {fileID: 1330679827}
   isGameStarted: 0
   isGameOver: 0
+  isLevelUp: 0
 --- !u!4 &2053813260
 Transform:
   m_ObjectHideFlags: 0

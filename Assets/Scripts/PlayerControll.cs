@@ -1,23 +1,27 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PlayerControll : MonoBehaviour
 {
     [SerializeField]
     float tapForce;
+    [SerializeField]
+    float textUp;
     public Color[] colors;
     private string currentColor;
     private int colornumber;
     Rigidbody rb;
    MeshRenderer render;
+   TrailRenderer tr;
 
     public GameObject blows;
+    public GameObject textMeshpro;
     public Text scorePanel;
     private int tempScore;
    void Awake(){
        rb=GetComponent<Rigidbody>();
        render=GetComponent<MeshRenderer>();
+       tr=GetComponent<TrailRenderer>();
    }
    void Start(){
        randomizePlayerColor();
@@ -38,22 +42,27 @@ public class PlayerControll : MonoBehaviour
         switch(colornumber){
             case 0:
                 render.material.color=colors[0];
+                tr.material.color=colors[0];
                 currentColor="Blue";
                 break;
             case 1:
                 render.material.color=colors[1];
+                tr.material.color=colors[1];
                 currentColor="Lime";
                 break;
             case 2:
                 render.material.color=colors[2];
+                  tr.material.color=colors[2];
                 currentColor="Purple";
                 break;
             case 3:
                 render.material.color=colors[3];
+                  tr.material.color=colors[3];
                 currentColor="Red";
                 break;
             default:
                 render.material.color=colors[0];
+                  tr.material.color=colors[0];
                 currentColor="Purple";
                 break;
 
@@ -64,6 +73,8 @@ public class PlayerControll : MonoBehaviour
    void OnCollisionEnter(Collision other){
        if(other.gameObject.tag==currentColor){
            ScoreManager.instance.score+=5;
+          // textMeshpro.GetComponent<TextMesh>().color=colors[colornumber];
+             Instantiate(textMeshpro,transform.position,Quaternion.identity);
           GameObject blast= Instantiate(blows,transform.position,Quaternion.identity)as GameObject;
         // ParticleSystem.MainModule setUp = blast.GetComponent<ParticleSystem>().main;
         // setUp.startColor= new ParticleSystem.MinMaxGradient(render.material.color);
